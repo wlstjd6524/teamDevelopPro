@@ -10,6 +10,7 @@ Wi-Fi 채널 상태 정보를 활용한 인간 행동 인식 시스템
   - 환경구성
   - 데이터 수집
   - 머신러닝 모델 구현 및 학습
+  - UI/UX 구현 및 구현한 UI/UX 에 학습된 데이터 적용
   - 프로젝트 제출
   - 발표 및 평가
 
@@ -20,7 +21,7 @@ Wi-Fi 채널 상태 정보를 활용한 인간 행동 인식 시스템
 
 ## 💻 개발환경 및 도구와 하드웨어 플랫폼 정보
 - Raspberry Pi 4 Model B 2GB RAM
-  - Raspberry Pi OS Kernel Version : 5.10
+  - Raspberry Pi OS Kernel Version : 5.10.92
   - Nexmon Tool & Nexmon OpenSource
     - Nexmon OpenSource : <https://github.com/nexmonster/nexcsi>
 - Wi-Fi AP
@@ -40,6 +41,8 @@ Wi-Fi 신호를 활용한 인간 행동 인식(HAR) 기술은 이러한 문제�
 해당 LoS/NLoS 환경을 구분하여, 각 환경에 맞는 HAR 모델을 적용함으로써 행동 인식 정확도를 개선하는 시스템을 우선 구현하는 것 입니다. <br>
 프로젝트의 개발내용은 다음과 같습니다. 
 - Raspberry Pi OS 설치 (2대 운용)
+  - Raspberry Pi 의 OS 는 반드시 "Kernel Version : 5.10.92" 버전을 권장함.
+    - NEXMON_CSI 가 지원하는 운영체제는 4.19/5.4 , 4.19와 5.4 os로 setup하는 경우 buster 저장소가 호환되지 않아 오류 발생
 - Paspberry Pi 에 Nexmon Tool 설치
 - Wi-Fi 신호를 쏠 수 있는 AP 구성
 - CSI 데이터 수집
